@@ -7,6 +7,17 @@ import './SharkTank.scss';
 class SharkTank extends React.Component {
   static propTypes = {
     livingStudents: PropTypes.arrayOf(studentShape.studentShape),
+    followTheLight: PropTypes.func,
+  }
+
+  followTheLightEvent = (e) => {
+    e.preventDefault();
+    const { followTheLight, livingStudents } = this.props;
+    const arrLength = livingStudents.length;
+    const arrNum = Math.floor(Math.random() * arrLength);
+    if (arrLength > 0) {
+      followTheLight(arrNum);
+    }
   }
 
   render() {
@@ -17,7 +28,7 @@ class SharkTank extends React.Component {
 
     return (
       <div className ="cont">
-        <button type="button" className="btn btn-danger">ATTACK</button>
+        <button type="button" className="btn btn-danger" onClick ={this.followTheLightEvent}>ATTACK</button>
       <div className ="tank">
         { livingCards }
       </div>
