@@ -1,5 +1,6 @@
 import React from 'react';
 import studentData from '../helpers/data/studentData';
+import SharkTank from '../components/SharkTank/SharkTank';
 import './App.scss';
 
 class App extends React.Component {
@@ -15,10 +16,12 @@ class App extends React.Component {
   }
 
   render() {
+    const { livingStudents } = this.state;
+
     return (
       <div className="App">
         <h2>Shark Attack!</h2>
-        <button className="btn btn-info">I am a button</button>
+        <SharkTank students={livingStudents} />
       </div>
     );
   }
