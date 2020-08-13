@@ -131,4 +131,8 @@ const livingStudents = () => students.filter((student) => !student.isDead);
 
 const dearlyBeloved = () => students.filter((student) => student.isDead);
 
-export default { livingStudents, dearlyBeloved };
+const followTheLight = (arrNum) => {
+  livingStudents()[arrNum].isDead = true;
+};
+
+export default { livingStudents, dearlyBeloved, followTheLight };
