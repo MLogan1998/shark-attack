@@ -4,4 +4,10 @@
 
 body {
   background-color: $favColor;
+
+  h1 {
+    color: white;
+    margin-top: 10px;
+    text-shadow: 2px 2px lightgrey;
+  }
 }

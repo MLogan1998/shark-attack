@@ -20,8 +20,8 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <h2>Shark Attack!</h2>
-        <SharkTank students={livingStudents} />
+        <h1>Shark Attack!</h1>
+        <SharkTank livingStudents={livingStudents} />
       </div>
     );
   }
