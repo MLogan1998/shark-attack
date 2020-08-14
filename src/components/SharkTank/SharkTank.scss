@@ -1,11 +1,11 @@
-.tank {
+.tank, .graveCont {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   flex-wrap: wrap;
 }
 
-.cont {
+.cont, .graveYard {
   width: 50%;
   margin: 10px auto 0px auto;
   border: 4px solid white;
