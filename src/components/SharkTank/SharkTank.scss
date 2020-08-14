@@ -12,3 +12,14 @@
   border-radius: 5px;
   padding: 20px;
 }
+
+.cont {
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);;
+}
+@media only screen and (max-width: 600px) {
+  .cont, .graveYard {
+    width: 95%;
+    margin: 5px auto 0px auto;
+    padding: 10px;
+  }
+}

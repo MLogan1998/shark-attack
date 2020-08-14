@@ -1,6 +1,8 @@
 import React from 'react';
 import studentShape from '../../helpers/data/props/studentShape';
 
+import './GraveStone.scss';
+
 class GraveStone extends React.Component {
   static propTypes = {
     gravestone: studentShape.studentShape,
