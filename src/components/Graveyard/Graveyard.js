@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import studentShape from '../../helpers/data/props/studentShape';
 import GraveStone from '../GraveStone/GraveStone';
 
+import './Graveyard.scss';
+
 class GraveYard extends React.Component {
   static propTypes = {
     dearlyBeloved: PropTypes.arrayOf(studentShape.studentShape),
@@ -16,7 +18,7 @@ class GraveYard extends React.Component {
 
     return (
       <div className="graveYard">
-        <h1>Graveyard</h1>
+        <h2>Graveyard</h2>
       <div className="graveCont">
         { graveStone }
       </div>
