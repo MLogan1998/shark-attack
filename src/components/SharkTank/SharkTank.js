@@ -16,7 +16,8 @@ class SharkTank extends React.Component {
     const arrLength = livingStudents.length;
     const arrNum = Math.floor(Math.random() * arrLength);
     if (arrLength > 0) {
-      followTheLight(arrNum);
+      const studentId = livingStudents[arrNum].id;
+      followTheLight(studentId);
     }
   }
 

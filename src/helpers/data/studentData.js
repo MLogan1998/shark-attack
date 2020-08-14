@@ -131,8 +131,12 @@ const livingStudents = () => students.filter((student) => !student.isDead);
 
 const dearlyBeloved = () => students.filter((student) => student.isDead);
 
-const followTheLight = (arrNum) => {
-  livingStudents()[arrNum].isDead = true;
+const followTheLight = (studentId) => {
+  const stillBreathing = livingStudents();
+  stillBreathing.forEach((response) => {
+    if (response.id === studentId) {
+      response.isDead = true;
+    }
+  });
 };
-
 export default { livingStudents, dearlyBeloved, followTheLight };
