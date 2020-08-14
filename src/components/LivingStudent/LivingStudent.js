@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import studentShape from '../../helpers/data/props/studentShape';
 import './LivingStudent.scss';
 
@@ -13,7 +12,7 @@ class LivingStudent extends React.Component {
 
     return (
       <div className="fishie">
-      <i className="fas fa-fish fa-lg"></i>
+      <i className="fas fa-fish fa-lg fa-2x"></i>
       <p>{livingStudent.firstName}</p>
       </div>
     );
